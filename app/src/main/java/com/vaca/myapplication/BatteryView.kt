@@ -71,7 +71,7 @@ class BatteryView : View {
         val x2 = 100f
         val y2 = 40f
         val shader: Shader =
-            LinearGradient(0f, 0f, 0f, 500f, Color.BLACK, Color.WHITE, TileMode.CLAMP)
+            LinearGradient(0f, 0f, 200f, 400f, Color.BLACK, Color.WHITE, TileMode.CLAMP)
         val paint = Paint()
         paint.shader = shader
 //        canvas.drawRect(RectF(x1.toFloat(), y1.toFloat(), x2.toFloat(), y2.toFloat()), paint)
