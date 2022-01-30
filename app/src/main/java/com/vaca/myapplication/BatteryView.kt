@@ -86,6 +86,10 @@ class BatteryView : View {
         paint.strokeWidth=1f
         paint.style=Paint.Style.FILL_AND_STROKE
         canvas.drawPath(gg,paint)
+        paint.shader =   LinearGradient(200f, 200f, 400f, 400f, Color.YELLOW, Color.RED, TileMode.CLAMP)
+        paint.style=Paint.Style.STROKE
+        paint.strokeWidth=10f
+        canvas.drawLine(200f,200f,400f,400f,paint)
     }
 
     private fun getColor(resource_id: Int): Int {
